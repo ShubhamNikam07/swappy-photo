@@ -77,7 +77,7 @@ function About() {
   useReveal()
   return (
     <section className="sec about">
-      <div className="about-img rv"><img src="/photos/about.jpg" alt="Swappy Pawar with camera" loading="lazy" /></div>
+      <div className="about-img rv"><img src={`${import.meta.env.BASE_URL}photos/about.jpg`} alt="Swappy Pawar with camera" loading="lazy" /></div>
       <div>
         <p className="eyebrow rv">Hello, I am Swappy & Crew</p>
         <h2 className="rv d1">Ten years of moments, <em>framed with care</em></h2>

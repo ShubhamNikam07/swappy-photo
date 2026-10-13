@@ -5,7 +5,7 @@ export type Category = 'Wedding' | 'Pre-Wedding' | 'Engagement' | 'Portrait'
 export const CATEGORIES: Category[] = ['Wedding', 'Pre-Wedding', 'Engagement', 'Portrait']
 
 export interface Photo { id: number; cat: Category; file: string; alt: string }
-export const src = (p: Photo) => `/photos/${p.file}.jpg`
+export const src = (p: Photo) => `${import.meta.env.BASE_URL}photos/${p.file}.jpg`
 export const PHOTOS: Photo[] = [
   { id: 0, cat: 'Pre-Wedding', file: 'prewedding', alt: 'Couple on a picnic in a hill meadow' },
   { id: 1, cat: 'Wedding', file: 'ritual', alt: 'Bride offering a garland at the wedding ceremony' },
